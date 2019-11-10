@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/PROXIMO/CLionProjects/CPP_mod2/main.cpp
+iostream
+-
+string
+-
+cmath
+-
+cstdlib
+-
+time.h
+C:/Users/PROXIMO/CLionProjects/CPP_mod2/time.h
+
