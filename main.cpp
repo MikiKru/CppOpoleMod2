@@ -173,10 +173,30 @@ int factorial(int n){
     }
     return result;
 }
+// rekurencja -> funkcja wywołuje sama siebie przy zmieniających się argumentach
+int factorialRec(int n){
+    if(n == 1){
+        return 1;
+    }
+    return n*factorialRec(n-1);
+}
 
+int getFibonacciSum(int n){
+    int fib[100];
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        if(i == 0 || i == 1){
+            fib[i] = 1;
+        } else {
+            fib[i] = fib[i-1] + fib[i-2];
+        }
+        sum += fib[i];
+    }
+    return sum;
+}
 
 int main() {
-    int n = 5;
-    cout << n << "! = " << factorial(n) << endl;
+    int n = 6;
+    cout << "fib(" << n << ") = " << getFibonacciSum(n) << endl;
     return 0;
 }
