@@ -153,8 +153,22 @@ bool generatorKichania(){
     srand(time(NULL));
     return rand() % 2;
 }
+int sumAllElements(int tab[], int size){
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum = sum + tab[i];
+    }
+    return sum;
+}
+double getAvg(int sum, int size){
+    return (double)sum/size;
+}
 
 int main() {
-    cout << naZdrowie(generatorKichania()) << endl;
+    int tab[] = {1,2,3,4,5,10,10,1};
+    int size = sizeof(tab)/ sizeof(int);
+    int sum = sumAllElements(tab, size);
+    cout << "Suma elemntow tablicy: " << sum << endl;
+    cout << "Srednia elemntow tablicy: " << getAvg(sum, size) << endl;
     return 0;
 }
