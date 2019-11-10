@@ -89,10 +89,26 @@ void ex20(){
     } else {
         cout << "Szanowny Panie "+name + "ie" << endl;
     }
+}
+void ex21(){
+    cout << "Wpisz zdanie" << endl;
+    string sentence;
+    getline(cin,sentence);
 
+    // petle zmieniająca wszystkie znaki w zdaniu na małe
+    for (int i = 0; i < sentence.length() ; i++) {
+        sentence[i] = tolower(sentence[i]);
+    }
+    // zmiana pierwszego znaku na wielką literę
+    sentence[0] = toupper(sentence[0]);
+    // sprawdzenie czy jest kropka -> jeśli nie to dodanie . do zdania
+    if(sentence[sentence.length()-1] != '.'){
+       sentence += ".";
+    }
+    cout << "Twoje zdanie: " << sentence << endl;
 }
 
 int main() {
-    ex20();
+    ex21();
     return 0;
 }
