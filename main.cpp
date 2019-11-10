@@ -73,6 +73,10 @@ void stringTest(){
     // dodaj Ali gitare w zamian za utraconego kota
     sentence = sentence + "gitare";
     cout << sentence << endl;
+    // sprawdz metoda find czy ala ma kota
+    cout << sentence.find('a') << endl;
+    cout << sentence.find("kot") << endl;
+    cout << sentence.find("gitar") << endl;
 }
 
 
