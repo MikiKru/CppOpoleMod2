@@ -164,11 +164,19 @@ double getAvg(int sum, int size){
     return (double)sum/size;
 }
 
+int factorial(int n){
+    int result = 1;
+    while(n > 1){
+        result = result * n;
+        // dekrementacja n
+        n--;
+    }
+    return result;
+}
+
+
 int main() {
-    int tab[] = {1,2,3,4,5,10,10,1};
-    int size = sizeof(tab)/ sizeof(int);
-    int sum = sumAllElements(tab, size);
-    cout << "Suma elemntow tablicy: " << sum << endl;
-    cout << "Srednia elemntow tablicy: " << getAvg(sum, size) << endl;
+    int n = 5;
+    cout << n << "! = " << factorial(n) << endl;
     return 0;
 }
