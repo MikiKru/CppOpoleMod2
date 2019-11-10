@@ -195,8 +195,14 @@ int getFibonacciSum(int n){
     return sum;
 }
 
+double calcDistance(int x1, int y1, int x2, int y2 ){
+    return sqrt(pow(x2-x1, 2)+(pow(y2-y1, 2)));
+}
+
+double calcDistance3d(int x1, int y1, int z1, int x2, int y2,int z2 ){
+    return sqrt(pow(x2-x1, 2)+(pow(y2-y1, 2))+pow(z2-z1,2));
+}
 int main() {
-    int n = 6;
-    cout << "fib(" << n << ") = " << getFibonacciSum(n) << endl;
+    cout << calcDistance3d(1, 1, 1, 2,2,2) << endl;
     return 0;
 }
