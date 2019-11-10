@@ -137,8 +137,24 @@ void ex21(){
     }
 
 }
+// funkcja przyjmuje dwa argumenty i zwraca wynik działania
+double addNumbers(double num1, double num2){
+    double result = num1 + num2;
+    return result;
+}
+string naZdrowie(bool czyKtosKichnal){
+    if(czyKtosKichnal){
+        return "Na zdrowie!";
+    } else {
+        return "Nikt nie kichnal";
+    }
+}
+bool generatorKichania(){
+    srand(time(NULL));
+    return rand() % 2;
+}
 
 int main() {
-    ex21();
+    cout << naZdrowie(generatorKichania()) << endl;
     return 0;
 }
