@@ -39,8 +39,44 @@ void classifyMonths(){
                             {GRUDZIEN,STYCZEN,LUTY,MARZEC}
                                 };
 }
+void stringTest(){
+    string name1 = "alan";
+    string name2 = "ala z";
+    // długość napisu
+    cout << name1 << " zawiera " << name1.length() << " znaki" << endl;
+    cout << name2 << " zawiera " << name2.length() << " znaki" << endl;
+
+    cout << "Dodaje Ale do ali: " << (name1 +" "+ name2) << endl;
+    // \n - newline
+    // \t - tab
+    cout << "Dodaje Ale do ali: " << (name1 +"\n"+ name2) << endl;
+    cout << "Dodaje Ale do ali: " << (name1 +"\t"+ name2) << endl;
+
+    if(name1 < name2){
+        cout << "TAK" << endl;
+    } else {
+        cout << "NIE" << endl;
+    }
+    string newName = name1.insert(2,"xxx");
+    cout << newName << endl;
+    name1.replace(2,3, "");
+    cout << name1 << endl;
+
+    string sentence = "Ala ma kota";
+    // wyświetl kota z zdania
+    string kot = sentence.substr(7,3);
+    cout << kot << endl;
+    cout << sentence << endl;
+    // zabierz Ali kota i wyświetl zdanie
+    sentence.replace(7,4,"");
+    cout << sentence << endl;
+    // dodaj Ali gitare w zamian za utraconego kota
+    sentence = sentence + "gitare";
+    cout << sentence << endl;
+}
+
 
 int main() {
-    enumTest();
+    stringTest();
     return 0;
 }
