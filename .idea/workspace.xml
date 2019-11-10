@@ -12,6 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33a589c9-dacc-41ef-9439-26d451635fed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP_mod2.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CPP_mod2.dir/vc140.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CPP_mod2.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CPP_mod2.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CPP_mod2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CPP_mod2.pdb" afterDir="false" />
@@ -65,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573375784233</updated>
-      <workItem from="1573375788348" duration="4527000" />
+      <workItem from="1573375788348" duration="5862000" />
     </task>
     <servers />
   </component>

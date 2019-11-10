@@ -79,8 +79,20 @@ void stringTest(){
     cout << sentence.find("gitar") << endl;
 }
 
+void ex20(){
+    string name;
+    cout << "Podaj imie: " << endl;
+    getline(cin, name);
+
+    if((name[name.length()-1] == 'a') || (name[name.length()-1] == 'A')){
+        cout << "Szanowna Pani " + name.replace(name.length()-1,1,"o") << endl;
+    } else {
+        cout << "Szanowny Panie "+name + "ie" << endl;
+    }
+
+}
 
 int main() {
-    stringTest();
+    ex20();
     return 0;
 }
