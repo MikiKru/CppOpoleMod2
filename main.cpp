@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include "time.h"
 
+
 using namespace std;
 
 enum work_days{
@@ -106,6 +107,35 @@ void ex21(){
        sentence += ".";
     }
     cout << "Twoje zdanie: " << sentence << endl;
+
+    // tablica słow - pust
+    string words[100];
+    // zmienna przechowująca słowo
+    string word;
+    // indeks zliczający słowa dodane do tablicy words
+    int index = 0;
+    for (int i = 0; i < sentence.length(); i++) {
+        if(sentence[i] == ' '){
+            // jeżeli wystąpiła spacja
+            // słowo zapisuje w tablicy słów na określonym indeksie
+            words[index] = word;
+            // inkrementacja indeksu by dalej zapisywać w kojlejnych komórkach
+            index++;
+            // czyszczynie słowa
+            word = "";
+        } else {
+            // jeżeli nie ma spacji
+            // do słowa dodaje kolejne literki
+            word += sentence[i];
+        }
+    }
+    // na koniec dodajemy pozostałą zawartość przechowywaną w zmiennej word
+    words[index] = word;
+
+    for (int j = 0; j <= index; j++) {
+        cout << words[j] << endl;
+    }
+
 }
 
 int main() {
